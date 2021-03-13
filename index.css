@@ -78,7 +78,7 @@ main {
   color: #F2C094;
   background-image: linear-gradient(to bottom right,#3F7EA6,#023373);
 }
-@media (max-width: 800px;) {
+@media screen and (max-width: 800px;) {
   main {
     max-width: 800px;
   }
