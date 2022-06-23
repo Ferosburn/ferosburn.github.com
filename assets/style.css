@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* template 1 */
+  --dark-blue: #06283D;
+  --deep-blue: #1363DF;
+  --blue: #47B5FF;
+  --ligth-blue: #DFF6FF;
+
+  /* template 2 */
+  --black: #222831;
+  --dark-gray: #393E46;
+  --teal: #00ADB5;
+  --white: #EEEEEE; 
+
+  --text: #303345;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222831;
+  font-family: 'Inter', sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #DFF6FF;
+  background: linear-gradient(160deg, #DFF6FF 0%, #1363DF 100%);
+  overflow: auto;
+  z-index: -100;
+}
+
+/* HEADER */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #DFF6FF;
+  z-index: 100;
+  box-shadow: 0px 5px 15px #06283D88;
+}
+
+.header-center {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: sticky;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  background-color: #DFF6FF44;
+  box-shadow: 0px 5px 10px #06283D88;
+  padding: 20px 30px;
+}
+
+.nav-header button {
+  background-color: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.nav-links {
+  padding: 20px 30px;
+  line-height: 30px;
+}
+
+.nav-links li {
+  list-style-type: none;
+  margin-left: 10px;
+}
+
+.nav-links i {
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  display: block;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+/* HEADER END */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 130px;
+  padding: 20px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+footer {
+  font-size: 16px;
+  padding: 30px;
+  background: rgb(19,99,223);
+  background: linear-gradient(180deg, #00ADB5 0%, rgba(19,99,223,1) 20%);
+  text-align: center;
+  color: #DFF6FF;
+}
+
+/* CONTENT */
+
+article {
+  scroll-margin: 160px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #DFF6FF44;
+  box-shadow: 5px 5px 15px #06283D88;
+  position: relative;
+  z-index: 1;
+}
+
+article h2 {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+/* HANDLE IMAGE */
+
+.image-container {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.project-image {
+  max-height: 300px;
+  max-width: 100%;
+  box-shadow: 5px 5px 15px #06283D88;
+}
+
+.img-btn {
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.prev, .next {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+}
+
+.prev {
+  text-align: left;
+  left: 0;
+}
+
+.next {
+  text-align: right;
+  right: 0;
+}
+
+/* HANDLE IMAGE END */
+
+.date {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+
+.link {
+  font-size: 24px;
+}
+
+.desc {
+  margin-top: 20px;
+}
+
+.info {
+  position: relative;
+  margin-top: 10px;
+}
+
+.info p {
+  font-size: 12px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+}
+/* CONTENT END */
+
+/* ADDITIONAL FEATURES */
+
+.expand {
+  color: #222831CC;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/* ADDITIONAL FEATURES END */
+
+/* LANGUAGE PROPERTIES */
+.percentage {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.lang {
+  display: inline-block;
+  height: 5px;
+}
+
+.info-item {
+  font-weight: bold;
+}
+
+.HTML {
+  background-color: #E43C26;
+}
+
+.CSS {
+  background-color: #264DE4;
+}
+
+.JavaScript {
+  background-color: #F0DB4F;
+}
+
+.Ruby {
+  background-color: #CC0000;
+}
+
+.Other {
+  background-color: #000000;
+}
+
+/* LANGUAGE PROPERTIES END */
+
+/* PROFILE */
+
+aside {
+  margin: 0 auto;
+  /* max-width: 600px; */
+  scroll-margin: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #DFF6FF44;
+  box-shadow: 5px 5px 15px #06283D88;
+  z-index: 1;
+}
+
+#profile {
+  scroll-margin: 160px;
+}
+
+aside h2 {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  height: 160px;
+  width: 160px;
+  background: #DFF6FF;
+  background: linear-gradient(200deg, #00ADB5 0%, #264DE4 100%);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+aside img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+th {
+  text-align: left;
+  padding-right: 10px;
+}
+
+table {
+  margin: 10px 0;
+}
+
+/* PROFILE END */
