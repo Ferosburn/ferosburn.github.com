@@ -10,20 +10,20 @@ const projects =
     //   languagePercentage: [
     //     {
     //       langName: "HTML",
-    //       percentage: 21.4
+    //       percentage: 43.1
     //     },
     //     {
     //       langName: "CSS",
-    //       percentage: 29.1
+    //       percentage: 20.2
     //     },
     //     {
     //       langName: "JavaScript",
-    //       percentage: 49.5
+    //       percentage: 36.7
     //     }
     //   ],
     //   date: "Juni 2022",
     //   images: [],
-    //   description: null
+    //   description: "Portofolio pribadi versi ketiga"
     // },
     {
       projectName: 'To-Do-List',
@@ -53,7 +53,7 @@ const projects =
       images: [
         "./assets/images/Todo List.png"
       ],
-      description: null
+      description: "Proyek pribadi dibuat untuk memenuhi tugas membuat todo-list menggunakan framework ReactJS dari pelatihan DTS FGA Progate ReactJS for Web Development.",
     },
     {
       projectName: 'Kalkulator',
@@ -81,7 +81,7 @@ const projects =
         "./assets/images/Kalkulator 1.png",
         "./assets/images/Kalkulator 2.png"
       ],
-      description: null
+      description: "Proyek pribadi dibuat untuk memenuhi tugas membuat kalkulator menggunakan JavaScript dari pelatihan DTS FGA Progate ReactJS for Web Development."
     },
     {
       projectName: 'UndangApp',
@@ -119,7 +119,7 @@ const projects =
         "./assets/images/UndangApp 4.png",
         "./assets/images/UndangApp 5.png"
       ],
-      description: null
+      description: "Proyek pribadi iseng setelah melakukan pelatihan DTS FGA Progate Full Stack Developer with Ruby (HTML, CSS, Ruby, Ruby on Rails). Saya membuat proyek ini untuk mengukur dan mengembangkan kemampuan saya dalam membuat sebuah web app."
     },
     {
       projectName: 'Masakan Nusantara',
@@ -142,7 +142,7 @@ const projects =
         "./assets/images/Masakan Nusantara Tablet.png",
         "./assets/images/Masakan Nusantara Phone.png"
       ],
-      description: null
+      description: "Proyek ini dikerjakan secara tim dan dibuat untuk tugas HTML dan CSS dari pelatihan DTS FGA Progate Full Stack Developer with Ruby (HTML, CSS, Ruby, Ruby on Rails)."
     },
     {
       projectName: 'Portofolio',
@@ -168,7 +168,7 @@ const projects =
         "./assets/images/Portofolio 1.png",
         "./assets/images/Portofolio 2.png"
       ],
-      description: null
+      description: "Tugas akhir individu untuk pelatihan dari Kode ID Belajar Langkah Fundamental untuk Menjadi Web Developer"
     }
   ];
 
@@ -265,10 +265,7 @@ const displayProjectItems = (projectItems) => {
                 <a target="_blank" href="${item.repository}"><i class="fa-brands fa-github"></i></a>
               </p>
               <div class='desc'>
-                <!--
-                ${item.description}
-                -->
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur sit error pariatur impedit sequi delectus eaque sint esse ea?
+                <p>${item.description}
                 <span class='expand'>Selengkapnya</span></p>
                 <div class='info hidden'>
                   <div class="close">X</div>
