@@ -310,3 +310,18 @@ table {
 }
 
 /* PROFILE END */
+
+@media screen and (min-width: 769px) {
+  main {
+    display: flex;
+    max-width: 1000px;
+  }
+
+  aside {
+    margin-left: 20px;
+    max-width: 350px;
+    max-height: 700px;
+    position: sticky;
+    top: -90px;
+  }
+}
