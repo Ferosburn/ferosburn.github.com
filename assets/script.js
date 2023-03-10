@@ -1,4 +1,4 @@
-import projects from "./projects";
+import projects from "./projects.js";
 // const projects = [
 //   {
 //     projectName: "Random Quote Machine",
