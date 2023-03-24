@@ -1,5 +1,26 @@
 const projects = [
   {
+    projectName: "My Bookshelf (Android)",
+    link: "",
+    repository: "https://github.com/Ferosburn/android-my-bookshelf",
+    languages: ["Kotlin"],
+    languagePercentage: [
+      {
+        langName: "Kotlin",
+        percentage: 100,
+      },
+    ],
+    date: "Maret 2023",
+    images: [
+      "./assets/images/Android My Bookshelf 1.png",
+      "./assets/images/Android My Bookshelf 2.png",
+      "./assets/images/Android My Bookshelf 3.png",
+      "./assets/images/Android My Bookshelf 4.png",
+    ],
+    description:
+      "Submission untuk kelas Dicoding Belajar Membuat Aplikasi Android untuk Pemula",
+  },
+  {
     projectName: "Random Quote Machine",
     link: "https://ferosburn.github.io/random-quote-machine/",
     repository: "https://github.com/Ferosburn/random-quote-machine",
